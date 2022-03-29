@@ -1,6 +1,7 @@
 import Header  from './components/header/Header';
 import Input from './components/input/Input';
 import './App.css';
+import CreateTodo from './components/create-todo/Create-todo';
 
 function App() {
   return (
@@ -10,6 +11,10 @@ function App() {
 
         <div className='input'>
         <Input/>
+
+        <CreateTodo task="walk the dog"/>
+        <CreateTodo task="vailid with passport -js"/>
+        <CreateTodo/>
       </div>
       </div>
       
