@@ -5,3 +5,9 @@
   border-radius: 3px;
 
 }
+
+.todo-container{
+  width: 550px;
+  border: 1px solid rgb(197,197,197);
+  border-radius: 3px;
+}
