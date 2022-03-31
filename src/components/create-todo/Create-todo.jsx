@@ -1,8 +1,12 @@
-import React from 'react';
+import css from "./CreateTodo.module.css"
 
 const CreateTodo = () => {
     return (
-        <input type="text">Enter todo here</input>
+        <form className="input-group">
+            <input type="text" class="form-control" placeholder="Enter todo hear"/>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
     );
 }
 
