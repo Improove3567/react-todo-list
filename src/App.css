@@ -1,5 +1,9 @@
 
 
+.head{
+  width: 500px;
+  color: rgb(197, 197, 197);
+}
 
 
 .todo-wrapper{
@@ -39,4 +43,11 @@
   margin-left: 10px;
   border-radius: 2px;
   margin-bottom: 1px; 
+}
+.todo-list>div:nth-child(odd){
+  background: grey;
+
+}
+.todo-list{
+  border: 1px solid rgb(197, 197,197);
 }
