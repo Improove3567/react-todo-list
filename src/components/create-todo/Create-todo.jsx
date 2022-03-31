@@ -1,8 +1,11 @@
 import React from 'react';
 
 
+
+
 const CreateTodo = (props) => {
     return (
+        
         <div className='todo d-flex align-items-center justify-content-between '>
         <div className='tasks'>
         <input type="checkbox"/> {" "}
@@ -15,6 +18,7 @@ const CreateTodo = (props) => {
             <img style={{width:"30px", height:"30px"}} src="https://cdn4.iconfinder.com/data/icons/eon-ecommerce-i-1/32/trashcan_delete_remove-128.png" alt="" />
         </div>
         </div>
+        
     );
 }
 

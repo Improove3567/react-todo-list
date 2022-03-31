@@ -35,9 +35,8 @@
   width: 525px;
   height: 50px;
   background-color: rgba(242, 228, 228, 0.282);
-  border:gainsboro 2px solid;
+  /* border:gainsboro 2px solid; */
   margin-left: 10px;
   border-radius: 2px;
-  margin-bottom: 1px;
+  margin-bottom: 1px; 
 }
-

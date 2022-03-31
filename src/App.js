@@ -14,7 +14,9 @@ function App() {
 
         <CreateTodo task="walk the dog"/>
         <CreateTodo task="vailid with passport -js"/>
-        <CreateTodo/>
+        <CreateTodo task="hello world"/>
+        <CreateTodo task="vailid with passport -js"/>
+        <CreateTodo task="jfdshfj"/>
       </div>
       </div>
       
