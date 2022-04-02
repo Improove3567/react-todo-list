@@ -4,7 +4,15 @@ import './App.css';
 import CreateTodo from './components/create-todo/Create-todo';
 import Todo from './components/todo/Todo';
 
+
 function App() {
+  // const  todoArray = [{
+  //   title:"hello"
+  // },{
+  //   title:"hello world"
+  // },{
+  //   title:"hello"
+  // }]
   return (
     <div className="App">
       <div className='todo-wrapper'>
@@ -12,8 +20,16 @@ function App() {
         <div className='p-3'>
           <CreateTodo />
           <div className='mt-2 todo-list'>
+            
               {
-                [1,2,3].map((todo)=><Todo text = {todo}/>) 
+                
+                ["1","h1","hello"].map((todo,pos)=>
+                <Todo key={pos}  text = {todo} />
+                
+                // />) 
+                // todoArray.map((item,pos)=>
+                // <Todo key={pos} title={item.title} />
+                ) 
               }
           </div>
         </div>

@@ -45,9 +45,12 @@
   margin-bottom: 1px; 
 }
 .todo-list>div:nth-child(odd){
-  background: grey;
+  background-color: rgb(235, 235, 235);
 
 }
 .todo-list{
   border: 1px solid rgb(197, 197,197);
+}
+.line{
+  text-decoration: line-through;
 }
