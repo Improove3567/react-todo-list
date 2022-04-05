@@ -30,10 +30,21 @@ class App extends React.Component{
     
   }
   this.createTodo = this.createTodo.bind(this)
+  this.changeStatus = this.changeStatus.bind(this)
   }
 
   createTodo(str){
-    this.setState({todolist: []})
+    this.setState({todolist: [ ...this.state.todolist, {id: Math.random(), text:str, status:false}]})
+  }
+  changeStatus(id) {
+    const newArr = this.state.todolist.map((item) => {
+    if (item.id === id){
+        const newObj = {...item, status: !item.status}
+        return newObj
+      }
+      return item
+    });
+    this.setState({todolist: newArr})
   }
 
 
@@ -41,7 +52,7 @@ class App extends React.Component{
       return(
         <div className="App">
         <div className='todo-wrapper'>
-          <Header count= {5} />
+          <Header count= {this.state.todolist.length} />
           <div className='p-3'>
             <CreateTodo createTodo={this.createTodo}/>
             <div className='mt-2 todo-list'>
@@ -49,7 +60,14 @@ class App extends React.Component{
                 {
                   
                   this.state.todolist.map((todo)=>
-                  <Todo text = {todo.text} status={todo.status}/>
+                  <Todo
+                  key={todo.id}
+                  changeStatus = {this.changeStatus} 
+                  id = {todo.id}
+                  text = {todo.text} 
+                  status={todo.status}
+            
+                  />
                   
                  
                   )  

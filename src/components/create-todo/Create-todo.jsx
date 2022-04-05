@@ -1,3 +1,4 @@
+import { toHaveTextContent } from "@testing-library/jest-dom/dist/matchers";
 import React from "react";
 
 
@@ -20,6 +21,9 @@ class CreateTodo extends React.Component{
     submit(e){
         e.preventDefault();
         this.props.createTodo(this.state.inputValue)
+        this.setState({inputValue: ""})
+        
+            
         
     }
 

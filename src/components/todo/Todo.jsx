@@ -5,7 +5,11 @@ export default function Todo(props) {
   return (
     <div className="items d-flex p-3 align-items: center ; justify-content-between">
         <div>
-        <input type="checkbox"  checked={props.status}className="m-2"  />
+        <input 
+        type="checkbox"  
+        checked={props.status} className="m-2"  
+        onChange={() => props.changeStatus(props.id)}
+        />
         <span className={props.status ? css.done : ""}>{props.text}</span>
         {
           
