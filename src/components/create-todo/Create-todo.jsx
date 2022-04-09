@@ -21,10 +21,7 @@ class CreateTodo extends React.Component{
     submit(e){
         e.preventDefault();
         this.props.createTodo(this.state.inputValue)
-        this.setState({inputValue: ""})
-        
-            
-        
+        this.setState({inputValue: ""}) 
     }
 
     render(){
