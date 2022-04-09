@@ -1,6 +1,5 @@
 import React from 'react';
 import Header  from './components/header/Header';
-import Input from './components/input/Input';
 import './App.css';
 import CreateTodo from './components/create-todo/Create-todo';
 import Todo from './components/todo/Todo';
@@ -81,7 +80,7 @@ class App extends React.Component{
     render(){
       if(this.state.isLoading){
         return <div className='loader'>
-          <img src='https://www.superiorlawncareusa.com/wp-content/uploads/2020/05/loading-gif-png-5.gif'/>
+          <img src='https://www.superiorlawncareusa.com/wp-content/uploads/2020/05/loading-gif-png-5.gif' alt="loader"/>
         </div>
       }
       
